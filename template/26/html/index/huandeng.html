@@ -14,7 +14,7 @@
 						{/maccms:vod}
 					</div>
 				</li>
-				{maccms:vod num="11" type="all" order="desc" by="time" level="4"}
+				{maccms:vod num="11" type="all" order="desc" by="time" }
 				<li class="col-md-5 col-sm-4 col-xs-2 {if condition="$key gt 8"} hidden-sm{/if}{if condition="$key gt 4"} hidden-xs{/if}">
 					<div class="myui-vodlist__box">
 				<a class="myui-vodlist__thumb wide lazyload" href="{:mac_url_vod_detail($vo)}" title="{$vo.vod_name}" data-original="{$vo.vod_pic|mac_url_img}">	
