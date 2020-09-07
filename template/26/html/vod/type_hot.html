@@ -1,0 +1,22 @@
+<div class="myui-panel active clearfix" style="background-color: #3b3939;">
+	<div class="myui-panel-box clearfix">
+		<div class="myui-panel_bd">	
+			<div class="flickity clearfix flickity-enabled is-draggable" data-align="left" data-next="1" data-play="1500">
+				{maccms:vod num="15" type="current" order="desc" by="rnd"}
+				<div class="col-lg-8 col-md-6 col-sm-4 col-xs-3">
+					<div class="myui-vodlist__box">
+			<a href="{:mac_url_vod_detail($vo)}" class="myui-vodlist__thumb lazyload" title="{$vo.vod_name}" style="background: url({$vo.vod_pic|mac_url_img});">	
+			<span class="play hidden-xs"></span>
+			<span class="pic-tag pic-tag-top">
+			<span class="tag" style="background-color: #7091fc;">{$vo.vod_score}分</span>	
+			<span class="tag" style="background-color: #ff9900;">{$vo.vod_area|mac_default='未知'}</span>
+			</span>
+		<span class="pic-text text-center">{$vo.vod_name}</span>
+	</a>																				
+</div>	
+				</div>
+				{/maccms:vod}
+			</div>	
+    	</div>
+   </div>
+</div>
